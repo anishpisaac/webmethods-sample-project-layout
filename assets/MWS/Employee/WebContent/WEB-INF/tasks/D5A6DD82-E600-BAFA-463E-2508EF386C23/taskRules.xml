@@ -1,0 +1,28 @@
+<CONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://www.webmethods.com/schema/xmlImport.xsd"
+    depCheck="false"
+>
+	<Mode type="sync">
+	    <!-- Setup distribution rules -->
+	    <CONTEXT alias="D5A6DD82-E600-BAFA-463E-2508EF386C23.routing.rules.storage">
+	    <wm_xt_portalrules name="New Assignment" description="" ruleEditingContextURI="D5A6DD82-E600-BAFA-463E-2508EF386C23.distrib.rule.editing.context" ruleType="routing">
+	<rule name="New Assignment" description="" ruleEditingContextURI="D5A6DD82-E600-BAFA-463E-2508EF386C23.distrib.rule.editing.context" ruleType="routing">
+		<condition><boolean constant="true" displayName="boolean" description="a boolean value (true or false)" variableInfo.enabled="false"></boolean></condition>
+		<result><string constant="CBK_TASK_ROLE" displayName="string" description="a string value" variableInfo.enabled="false"></string></result>
+		<attributes><attribute name="taskDefinitionURI">D5A6DD82-E600-BAFA-463E-2508EF386C23</attribute><attribute name="origConditionText">true</attribute><attribute name="assigneeList">assigneetype.physicalrole~&quot;CBK_TASK_ROLE&quot;~Role : CBK_TASK_ROLE~assigneeValue=&quot;CBK_TASK_ROLE&quot;\,assigneeLabel=CBK_TASK_ROLE</attribute><attribute name="ruleSet">TEST_CTRL_SET</attribute><attribute name="origResultText">&quot;CBK_TASK_ROLE&quot;</attribute><attribute name="managedBeanClass">com.webmethods.caf.faces.data.task.TaskRoundRobinWorkloadProvider</attribute><attribute name="distman_checkAvailability">false</attribute><attribute name="conditionJoin">0</attribute><attribute name="doNotFire">false</attribute><attribute name="ruleEditingContextID">task.rule.distribution.context</attribute><attribute name="fireOnce">true</attribute><attribute name="ruleType">routing</attribute><attribute name="distManType">round-robin</attribute><attribute name="conditionType">true</attribute><attribute name="conditions"></attribute></attributes>
+	</rule>
+</wm_xt_portalrules></CONTEXT>
+	
+	    <!-- Setup distribution filters -->
+	    <CONTEXT alias="D5A6DD82-E600-BAFA-463E-2508EF386C23.filter.rules.storage">
+	    </CONTEXT>
+	
+	    <!-- Setup trigger rules -->
+	    <CONTEXT alias="D5A6DD82-E600-BAFA-463E-2508EF386C23.change.rules.storage">
+	    </CONTEXT>
+	
+	    <!-- Setup schedule rules -->
+	    <CONTEXT alias="D5A6DD82-E600-BAFA-463E-2508EF386C23.schedule.rules.storage">
+	    </CONTEXT>
+	</Mode>
+</CONFIG>
